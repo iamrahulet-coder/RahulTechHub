@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RahulTechHub</title> <!-- Ye line replace / add karo -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <nav>
+  <ul class="navbar">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+    <h1>Rahul Kumar</h1>
+    <img src="image/rahul image.jpeg" alt="image/my photo .JPG"
+
+    <p>B.Tech CSE Student | Aspiring Software Engineer</p>
+
+    <a href="Resume__.pdf" target="_blank" class="resume-btn">Download Resume</a>
+
+
+
+    <hr>
+    <section id="hero">
+  <h1>Welcome to <span class="highlight">RahulTechHub</span></h1>
+  <h3>I am <span id="typewriter"></span></h3>
+  <p>Frontend Developer | Aspiring Software Engineer</p>
+  <a href="#contact" class="btn-primary">Contact Me</a>
+</section>
+
+    
+<div id="searchBar">
+  <input type="text" id="searchInput" placeholder="Type here...">
+  <button id="searchBtn">Search</button>
+</div>
+<section id="about" class="slide-up">
+  <h2>About Me</h2>
+  <h3>I am <span id="typewriter"></span></h3>
+  <p>I am Rahul Kumar, a Computer Science student...</p>
+</section>
+
+
+    
+
+    <section id="skills">
+  <h2>Skills</h2>
+
+  <h3>Frontend</h3>
+  <ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>Basic JavaScript</li>
+  </ul>
+
+  <p>HTML</p>
+  <div class="skill-bar">
+    <div class="skill html">80%</div>
+  </div>
+
+  <p>CSS</p>
+  <div class="skill-bar">
+    <div class="skill css">70%</div>
+  </div>
+
+  <p>JavaScript</p>
+  <div class="skill-bar">
+    <div class="skill js">50%</div>
+  </div>
+
+  <h3>Tools</h3>
+  <ul>
+    <li>VS Code</li>
+    <li>Git (Basic)</li>
+  </ul>
+</section>
+
+ <section id="education">
+  <h2>Education</h2>
+        </section>
+    <h3>Bachelor of Technology (B.Tech)</h3>
+    <p>Computer Science Engineering (CSE)</p>
+    <p>Om Sterling Global University</p>
+    <p>2022 - Present</p>
+    
+    <section id="certificates">
+  <h2>Certificates & Achievements</h2>
+
+  <div class="certificate-card">
+    <img src="trading_cert.png" alt="Trading Certificate">
+    <p>Trading Certificate — College Workshop</p>
+  </div>
+
+  <div class="certificate-card">
+    <img src="mini_project_cert.png" alt="Mini Project Certificate">
+    <p>Mini Project Completion Certificate</p>
+  </div>
+
+  <div class="certificate-card">
+    <img src="coding_cert.png" alt="Coding Certificate">
+    <p>Coding Certificate — Online Course</p>
+  </div>
+
+</section>
+
+
+<section id="projects" class="slide-up">
+  <h2>Projects</h2>
+
+  <div class="project-card" slide-up">
+    <img src="portfolio.png" alt="Portfolio Screenshot" class="project-img">
+
+    <h3>Portfolio Website</h3>
+    <p>Personal portfolio website using HTML and CSS.</p>
+    <p><b>Tech:</b> HTML, CSS</p>
+  </div>
+
+  <div class="project-card" slide-up" delay-1">
+    <h3>Simple HTML Website</h3>
+    <p>Basic website to understand HTML structure.</p>
+    <p><b>Tech:</b> HTML</p>
+  </div>
+
+</section>
+
+
+    <section id="contact">
+  <h2>Contact</h2>
+
+  <p>Email: <a href="mailto:verma950rahul@gmail.com" class="email-btn">Email Me</a></p>
+<p><a href="tel:8295046828" class="phone-btn">Call Me: 8295046828</a>
+</p>
+<a href="https://wa.me/918295046828" target="_blank" class="whatsapp-btn">Chat on WhatsApp</a>
+
+  <p>
+    <a href="https://www.linkedin.com/in/rahul-verma-05482/" target="_blank" class="linkedin-btn">LinkedIn Profile</a>
+    |<a href="https://github.com/verma950rahul-bit/rahulkumar.github.io" target="_blank" class="github-btn">GitHub</a>
+  </p>
+</section>
+<footer>
+  <p>&copy; 2025 Rahul Verma. All Rights Reserved.</p>
+  <p>
+    <a href="https://www.linkedin.com/in/rahul-verma-05482/" target="_blank" class="linkedin-btn">LinkedIn</a>
+    <a href="https://github.com/verma950rahul-bit/rahulkumar.github.io" target="_blank" class="github-btn">GitHub</a>
+    <a href="mailto:verma950rahul@gmail.com" class="email-btn">Email</a>
+    <a href="Resume__.pdf" target="_blank" class="resume-btn">Download Resume</a>
+
+  </p>
+  <button id="backToTop" title="Go to top">⬆</button>
+</footer>
+  ...
+</footer>
+<div id="progressBar"></div>
+
+<script>
+  const words = [
+    "Rahul Kumar",
+    "Frontend Developer",
+    "Aspiring Software Engineer",
+    "B.Tech CSE Student"
+  ];
+
+  let wordIndex = 0;
+  let charIndex = 0;
+  let isDeleting = false;
+
+  function typeWriter() {
+    const el = document.getElementById("typewriter");
+    if (!el) return;
+
+    const word = words[wordIndex];
+
+    if (!isDeleting) {
+      el.textContent = word.substring(0, charIndex + 1);
+      charIndex++;
+      if (charIndex === word.length) {
+        setTimeout(() => isDeleting = true, 1500);
+      }
+    } else {
+      el.textContent = word.substring(0, charIndex - 1);
+      charIndex--;
+      if (charIndex === 0) {
+        isDeleting = false;
+        wordIndex = (wordIndex + 1) % words.length;
+      }
+    }
+    setTimeout(typeWriter, isDeleting ? 50 : 100);
+  }
+
+  typeWriter();
+</script>
+<!-- Your JS code here -->
+<script>
+const backToTopBtn = document.getElementById("backToTop");
+
+// Show button after scrolling 100px
+window.onscroll = function() {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    backToTopBtn.style.display = "block";
+  } else {
+    backToTopBtn.style.display = "none";
+  }
+};
+
+// Scroll to top when clicked
+backToTopBtn.addEventListener("click", function() {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+</script>
+<script>
+window.onscroll = function() {
+  // Scroll Progress
+  const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  const scrolled = (winScroll / height) * 100;
+  document.getElementById("progressBar").style.width = scrolled + "%";
+};
+</script>
+
+<script>
+document.getElementById("searchBtn").addEventListener("click", function() {
+  const query = document.getElementById("searchInput").value;
+  if(query) {
+    alert("You searched for: " + query);
+  }
+});
+</script>
+
+
+
+</body>
+</html>
+
+
+
+
+
+

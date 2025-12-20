@@ -1,0 +1,477 @@
+body {
+    background-color: #f0f8ff;
+    font-family: Arial, sans-serif;
+}
+body {
+    background-color: #f0f8ff;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+h1 {
+    color: #2c3e50;
+}
+
+h3 {
+    color: #34495e;
+}
+
+h2 {
+    color: #2980b9;
+    margin-top: 20px;
+}a
+
+ul {
+    list-style-type: square;
+}
+img {
+    border-radius: 50%;   /* round photo */
+    display: block;       /* center karne ke liye */
+    margin: 20px auto;    /* top-bottom 20px aur horizontally center */
+    width: 150px;         /* size adjust karne ke liye */
+}
+nav {
+    background: #2c3e50;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #f1c40f;
+}
+html {
+    scroll-behavior: smooth;
+}
+section {
+  background: white;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+a.linkedin-btn {
+    background-color: #0A66C2; /* LinkedIn blue */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+a.linkedin-btn:hover {
+    background-color: #004182;
+}
+a.linkedin-btn {
+    background-color: #0A66C2;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+a.linkedin-btn:hover {
+    background-color: #004182;
+}
+a.whatsapp-btn {
+    background-color: #25D366;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+a.whatsapp-btn:hover {
+    background-color: #128C7E;
+}
+.contact-section p, .contact-section a {
+    margin-bottom: 10px; /* thoda gap */
+    display: inline-block; /* buttons properly show ho */
+}
+#about, #skills, #projects {
+    padding: 30px 20px;
+    background-color: #f9f9f9; /* light background */
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+#about h2, #skills h2, #projects h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+#about p, #skills p, #projects ul {
+    font-size: 16px;
+    line-height: 1.5;
+}
+#projects ul li {
+    margin-bottom: 10px;
+}
+.contact-section a {
+    display: inline-block;   /* buttons ek ke baad ek properly show ho */
+    margin-right: 10px;      /* thoda gap between buttons */
+    margin-bottom: 10px;     /* mobile me gap */
+}
+#about, #skills, #projects {
+    background-color: #ffffff;  /* white card look */
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* soft shadow */
+    margin-bottom: 20px;
+}
+.project-card {
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.project-card h3 {
+    margin-bottom: 8px;
+}
+.project-img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f5f5f5;
+}
+@media (max-width: 768px) {
+  .project-card {
+    padding: 10px;
+  }
+  nav a {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+a.email-btn {
+    background-color: #555;       /* grey color */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;        /* box style */
+}
+a.email-btn:hover {
+    background-color: #333;       /* hover effect */
+}
+a.phone-btn {
+    background-color: #ff9800;   /* orange color, standout */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;       /* button look */
+    margin-top: 10px;            /* thoda gap upar se */
+}
+a.phone-btn:hover {
+    background-color: #e68900;   /* hover effect */
+}
+a.github-btn {
+    background-color: #333;      /* GitHub dark grey */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;            /* spacing */
+}
+a.github-btn:hover {
+    background-color: #24292e;   /* hover effect */
+}
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* round photo */
+    object-fit: cover;  /* image properly fit ho */
+}
+footer {
+  background-color: #333;   /* dark background */
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+  border-radius: 10px 10px 0 0;  /* top corners rounded */
+  margin-top: 30px;
+}
+
+footer a {
+  margin: 0 10px;  /* buttons ke beech gap */
+}
+
+footer a:hover {
+  opacity: 0.8;    /* hover effect */
+}
+a.resume-btn {
+    background-color: #673ab7;  /* purple professional look */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+}
+a.resume-btn:hover {
+    background-color: #512da8;
+}
+.slide-up {
+    opacity: 0;
+    transform: translateY(40px);
+    animation: slideUp 1s ease forwards;
+}
+
+@keyframes slideUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.delay-1 { animation-delay: 0.3s; }
+.delay-2 { animation-delay: 0.6s; }
+.resume-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 18px;
+  background-color: #ff5722;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.resume-btn:hover {
+  background-color: #e64a19;
+  transform: scale(1.05);
+}
+.skill-bar {
+  background: #ddd;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.skill {
+  height: 22px;
+  line-height: 22px;
+  color: white;
+  text-align: right;
+  padding-right: 10px;
+  font-weight: bold;
+}
+
+.skill.html {
+  width: 80%;
+  background: #e44d26;
+}
+
+.skill.css {
+  width: 70%;
+  background: #264de4;
+}
+
+.skill.js {
+  width: 50%;
+  background: #f0db4f;
+  color: black;
+}
+#certificates {
+  margin: 40px 0;
+  text-align: center;
+}
+
+#certificates h2 {
+  margin-bottom: 25px;
+}
+
+.certificate-card {
+  display: inline-block;
+  width: 220px;
+  margin: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  transition: 0.3s;
+}
+
+.certificate-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.certificate-card p {
+  margin-top: 8px;
+  font-weight: bold;
+}
+
+.certificate-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+#typewriter {
+  color: #111827;       /* dark gray, visible on light background */
+  font-weight: bold;
+  border-right: 2px solid #111827;
+  padding-right: 5px;
+  animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+  0% { border-color: transparent; }
+  50% { border-color: #111827; }
+  100% { border-color: transparent; }
+}
+#backToTop {
+  display: none; /* initially hidden */
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 100;
+  font-size: 24px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 10px 14px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transition: background 0.3s, transform 0.3s;
+}
+
+#backToTop:hover {
+  background-color: #0056b3;
+  transform: translateY(-3px);
+}
+#progressBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 5px;
+  background-color: #007bff;
+  z-index: 99;
+}
+#searchBar {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+#searchInput {
+  width: 300px;
+  padding: 10px 15px;
+  border-radius: 25px 0 0 25px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 16px;
+}
+
+#searchBtn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 0 25px 25px 0;
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#searchBtn:hover {
+  background-color: #0056b3;
+}
+#hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: white;
+}
+
+#hero .highlight {
+  color: #00ffcc;
+}
+
+#hero h3 {
+  margin: 10px 0;
+  font-size: 28px;
+}
+
+#hero p {
+  font-size: 20px;
+  margin: 10px 0 20px 0;
+}
+
+#hero .btn-primary {
+  text-decoration: none;
+  background-color: #00ffcc;
+  color: #000;
+  padding: 12px 25px;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.3s;
+}
+
+#hero .btn-primary:hover {
+  background-color: #00e6b8;
+  transform: translateY(-3px);
+}
+
+/* Typewriter styling */
+#typewriter {
+  color: #00ffcc;
+  font-weight: bold;
+  border-right: 2px solid #00ffcc;
+  padding-right: 5px;
+  animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+  0% { border-color: transparent; }
+  50% { border-color: #00ffcc; }
+  100% { border-color: transparent; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
