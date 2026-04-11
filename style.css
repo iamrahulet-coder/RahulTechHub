@@ -165,9 +165,18 @@ button,
 .profile-photo {
   width: 220px;
   height: 220px;
-  border-radius: 32px;
+  border-radius: 24px;
   object-fit: cover;
-  border: 1px solid rgba(37, 99, 235, 0.15);
+  border: 3px solid var(--primary);
+  box-shadow: 0 20px 50px rgba(37, 99, 235, 0.25), 0 8px 16px rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 0 auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-photo:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 28px 60px rgba(37, 99, 235, 0.3), 0 12px 20px rgba(0, 0, 0, 0.15);
 }
 
 .hero-meta {
@@ -445,3 +454,19 @@ button,
     align-items: flex-start;
   }
 }
+.profile-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;        /* circle shape */
+    object-fit: cover;         /* photo stretch na ho */
+    border: 4px solid #2563eb; /* blue border */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2); /* shadow */
+    display: block;
+    margin: 20px auto;         /* center me lane ke liye */
+    transition: 0.3s;
+}
+
+.profile-img:hover {
+    transform: scale(1.05);    /* hover effect */
+}
+
